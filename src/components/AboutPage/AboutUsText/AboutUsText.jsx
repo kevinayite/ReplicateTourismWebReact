@@ -1,4 +1,5 @@
 import './AboutUsText.css';
+// import '../../ContactPage/About/About.css';
 
 const AboutUsText = () => {
   return (
@@ -24,8 +25,20 @@ const AboutUsText = () => {
      
       </div>
       <div className="about-right"> {/* Moved the image section after the text */}
-        <img src="https://www.sunderland.edu.hk/wp-content/uploads/2023/10/Blog-2-01.jpg" alt="Me" className="about-img large-img" />
-        <img src="https://www.sunderland.edu.hk/wp-content/uploads/2023/10/Blog-2-01.jpg" alt="Project Snapshot" className="about-img small-img" />
+        {/* <img src="https://www.sunderland.edu.hk/wp-content/uploads/2023/10/Blog-2-01.jpg" alt="Me" className="about-img large-img" />
+        <img src="https://www.sunderland.edu.hk/wp-content/uploads/2023/10/Blog-2-01.jpg" alt="Project Snapshot" className="about-img small-img" /> */}
+        <div className="travel-images-section">
+      <img
+        src="https://www.sunderland.edu.hk/wp-content/uploads/2023/10/Blog-2-01.jpg"  // Replace with your main image URL
+        alt="Main travel scene"
+        className="main-image"
+      />
+      <img
+        src="https://www.sunderland.edu.hk/wp-content/uploads/2023/10/Blog-2-01.jpg"  // Replace with your overlapping image URL
+        alt="Traveler with luggage"
+        className="overlay-image"
+      />
+    </div>
       </div>
     </div>
   );

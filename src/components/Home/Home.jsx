@@ -7,6 +7,7 @@ import Gallery from './Gallery/Gallery';
 import GalleryBeauty from './GalleryBeauty/GalleryBeauty';
 import Test from './test/Test';
 import './Home.css';
+//import TravelImagesSection from './ImageInImage/TravelImagesSection';
 
 const Home = () => {
   const items = [
@@ -102,6 +103,7 @@ location: 'London'
     <div>
       <NavBar/>
       <Content/>
+      {/* <TravelImagesSection/> */}
       <About/>
       <GalleryBeauty items={items}/>
       <Test/>
@@ -112,6 +114,7 @@ location: 'London'
             </h1>
                 <Gallery items={items}/>
             </div>
+            <br /><br />
       <Footer/>
 
     </div>

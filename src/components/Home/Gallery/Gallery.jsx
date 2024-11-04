@@ -79,6 +79,7 @@ const Gallery = ({ items }) => {
                     location={item.location} 
                 />
             ))}
+            
         </div>
     );
 };

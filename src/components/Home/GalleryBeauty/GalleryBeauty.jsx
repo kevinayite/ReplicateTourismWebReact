@@ -37,16 +37,16 @@ const GalleryBeauty = ({ items }) => {
     }, []);
 
     return (
-        <div className="gallery" ref={galleryRef}>
+        <div className="gallery-beauty" ref={galleryRef}>
             {items.map((item, index) => (
-                <div className="gallery-item" key={index}>
+                <div className="gallery-item-beauty" key={index}>
                     {isLoading ? (
                         <Skeleton height={200} width={300} />
                     ) : (
-                        <img src={item.image} alt="gallery" className="gallery-image" />
+                        <img src={item.image} alt="gallery-beauty" className="gallery-image" />
                     )}
-                    <div className="content">
-                        <span className="location">{isLoading ? <Skeleton width={100} /> : item.location}</span>
+                    <div className="content-beauty">
+                        <span className="location-beauty">{isLoading ? <Skeleton width={100} /> : item.location}</span>
                         <h2>Holiday Planners is a World Leading Online Tour Booking Platform</h2>
                         <p className="description">
                             {isLoading ? (
@@ -55,7 +55,7 @@ const GalleryBeauty = ({ items }) => {
                                 "Far far away, behind the word mountains, far from the countries Vokalia and Consonantia..."
                             )}
                         </p>
-                        <div className="details">
+                        <div className="details-beauty">
                         <MdAccessTimeFilled className='icons'/>
                             <div className="duration">
                                 <span>Duration</span>
@@ -68,9 +68,10 @@ const GalleryBeauty = ({ items }) => {
                                 <p>{isLoading ? <Skeleton width={80} /> : "50+ People"}</p>
                             </div>
                         </div>
-                        <div className="price-button-container">
-                        <p className="price">{isLoading ? <Skeleton width={60} /> : `$${item.price}`}</p>
-                        <button className="book-now">BOOK NOW</button>
+                        <div className="price-button-container-beauty">
+                        <p className="price-beauty">{isLoading ? <Skeleton width={60} /> : `$${item.price}`}</p>
+                        {/* <button className="book-now-beauty">BOOK NOW</button> */}
+                        <button className="book-now-beauty">BOOK NOW</button>
 
                         </div>
                         

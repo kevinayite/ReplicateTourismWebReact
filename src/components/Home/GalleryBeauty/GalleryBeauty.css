@@ -1,4 +1,4 @@
-.gallery {
+.gallery-beauty {
     display: flex;
     flex-wrap: nowrap;
     overflow-x: auto;
@@ -10,7 +10,7 @@
     margin-right: 30px;
 }
 
-.gallery-item {
+.gallery-item-beauty {
     min-width: 300px;
     max-width: 300px;
     border: 1px solid #ddd;
@@ -22,7 +22,7 @@
     background-color: #fff;
 }
 
-.gallery-item:hover {
+.gallery-item-beauty:hover {
     transform: scale(1.05);
 }
 
@@ -32,11 +32,11 @@
     object-fit: cover;
 }
 
-.content {
+.content-beauty {
     padding: 15px;
 }
 
-.location {
+.location-beauty {
     display: inline-block;
     background-color: #d2a75b;
     color: white;
@@ -47,7 +47,7 @@
 }
 
 
-.content h2 {
+.content-beauty h2 {
     font-size: 1.2em;
     color: #333;
     margin: 10px 0;
@@ -59,48 +59,50 @@
     margin-bottom: 15px;
 }
 
-.details {
+.details-beauty {
     display: flex;
     justify-content: space-between;
     padding: 10px 0;
 }
 
-.details span {
+.details-beauty span {
     font-size: 0.8em;
     color: #777;
 }
 
-.details p {
+.details-beauty p {
     font-size: 0.9em;
     font-weight: bold;
 }
 
 
 
-.book-now:hover {
+.book-now-beauty:hover {
     background-color: #b7904d;
 }
-.price-button-container {
+.price-button-container-beauty {
     display: flex;
     justify-content: space-between; /* Aligns items to the left and right */
     align-items: center; /* Vertically centers items */
     margin: 10px 0; /* Optional: adds space around the container */
 }
 
-.price {
+.price-beauty {
     font-size: 1.5em;
     color: #333;
 }
 
-.book-now {
+.book-now-beauty {
     background-color: #d2a75b;
     color: white;
-    padding: 10px 20px;
+    padding: 6px 8px;
     border: none;
     border-radius: 5px;
     cursor: pointer;
     font-size: 1em;
     font-weight: bold;
+    margin-left: 1px;
+    width: 50%;
 }
 .icons{
     color: #b7904d;
