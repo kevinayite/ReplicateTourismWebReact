@@ -1,0 +1,20 @@
+@import url('https://fonts.googleapis.com/css2?family=Ultra&display=swap');
+
+.headline-contact {
+  background-image: url('https://media.istockphoto.com/id/1346944001/photo/close-up-of-co-workers-stacking-their-hands-together.jpg?s=612x612&w=0&k=20&c=lidJcFUSR3rkMt4B0yoNwH55lz3sth9o2280keqBXGE=');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  
+}
+
+.ultra-contact {
+  font-family: 'Ultra', sans-serif; /* Ensure the font is applied */
+  font-size: 4rem; /* Adjust font size to be larger */
+  color: white; /* Change text color for contrast */
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7); /* Optional: Add shadow for better visibility */
+}
