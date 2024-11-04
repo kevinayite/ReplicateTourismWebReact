@@ -4,7 +4,7 @@ import { useState } from 'react';
 import { IoIosMail } from "react-icons/io";
 import { FaPhoneAlt, FaFacebookF, FaInstagram, FaTwitter } from "react-icons/fa";
 import { IoMenu, IoClose } from "react-icons/io5";
-import './NavBar.css';
+import './Navbar.css';
 import { Link } from 'react-router-dom'; // Import Link
 
 const NavBar = () => {
