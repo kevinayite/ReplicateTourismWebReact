@@ -59,3 +59,36 @@
     color: #c8a165; /* Customize the checkmark color */
     margin-right: 10px;
 }
+
+@media (max-width: 600px) {
+    .container-chateau {
+        flex-direction: column; /* Stack sections vertically on small screens */
+        align-items: center; /* Center align items */
+    }
+
+    .right-section {
+        margin-right: 0; /* Remove right margin on mobile */
+        text-align: left; /* Center text */
+    }
+
+    .checklist {
+        min-width: 100%; /* Full width on mobile */
+        margin-bottom: 20px; /* Space below each checklist */
+    }
+    
+    .checklist li {
+        margin-bottom: 10px; /* Adjust spacing */
+    }
+
+    .image-chateau {
+        height: 250px; /* Adjust image height for smaller screens */
+    }
+
+    .right-section h1 {
+        font-size: 1.5em; /* Smaller heading size */
+    }
+
+    .right-section p {
+        font-size: 0.9em; /* Smaller paragraph size */
+    }
+}

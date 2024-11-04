@@ -54,3 +54,38 @@
     margin-right: 8px; /* Space between icon and text */
   }
   
+
+  @media (max-width: 600px) {
+    .container-inverse {
+        flex-direction: column; /* Stack sections vertically */
+        align-items: center; /* Center align items */
+    }
+
+    .left-section-inverse {
+        max-width: 100%; /* Full width on mobile */
+        margin-right: 0; /* Remove right margin */
+        margin-left: 0; /* Remove left margin */
+        text-align: left; /* Center text */
+    }
+
+    .right-section-inverse {
+        justify-content: left; /* Center image on mobile */
+        margin-top: 20px; /* Add space above image */
+    }
+
+    .image {
+        height: 250px; /* Adjust image height for smaller screens */
+    }
+
+    h4 {
+        font-size: 1.5em; /* Smaller heading size */
+    }
+
+    p {
+        font-size: 0.9em; /* Smaller paragraph size */
+    }
+
+    .checklist li {
+        margin-bottom: 8px; /* Adjust spacing */
+    }
+}

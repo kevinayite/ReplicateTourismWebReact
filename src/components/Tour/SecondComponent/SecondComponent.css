@@ -44,4 +44,39 @@
     padding: 4px;
     min-width: 120px;
   }
-  
+  /* Media queries for responsiveness */
+@media (max-width: 900px) {
+  .tour-booking-app{
+    align-items: center;
+    margin-left: 10px;
+    margin-right: 10px;
+  }
+  .sort-filter {
+      flex-direction: column; /* Stack sort options on smaller screens */
+      align-items: flex-start; /* Align to the left */
+      width: 100%;
+  }
+
+  .content {
+      flex-direction: column; /* Stack content vertically */
+  }
+
+  .tour-list {
+      width: 100%; /* Full width for the tour list */
+  }
+}
+
+@media (max-width: 600px) {
+  .sort-filter {
+      gap: 10px; /* Reduce gap on very small screens */
+  }
+
+  .sort-container {
+      max-width: 100%; /* Allow sort container to use full width */
+  }
+
+  .tour-list {
+      flex-direction: column; /* Align tour cards in a single column */
+      gap: 15px; /* Adjust gap for better spacing */
+  }
+}

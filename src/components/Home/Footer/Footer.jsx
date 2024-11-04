@@ -38,14 +38,7 @@ const Footer = () => {
             <li><Link to="/tour">Tour</Link></li>
             <li><Link to="/contact">Contact us</Link></li>
           </ul>
-        {/* <ul className="square-list">
-          <li><a >Home</a></li>
-          <li><a >About</a></li>
-          <li><a >Destination</a></li>
-          <li><a >Tour</a></li>
-          <li><a >Blog</a></li>
-          <li><a >Contact us</a></li>
-        </ul> */}
+      
       </div>
       <div className="footer-column">
         <div className='line'>

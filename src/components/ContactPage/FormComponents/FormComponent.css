@@ -108,3 +108,34 @@ ul li {
 .get-icon{
   color: black;
 }
+
+@media (max-width: 900px) {
+  .form-container {
+    flex-direction: column; /* Stack form and info sections */
+    align-items: stretch; /* Stretch to full width */
+  }
+
+  .form-box {
+    width: 100%; /* Full width for form box */
+  }
+
+  .info-section {
+    width: 100%; /* Full width for info section */
+    margin-top: 20px; /* Add space above info section */
+    align-items: center;
+    margin-left: 50px;
+    margin-right: 50px;
+  }
+  
+  .form-group {
+    flex-direction: column; /* Stack input fields */
+  }
+
+  .input-group {
+    margin-right: 0; /* Remove margin for input groups */
+  }
+
+  button {
+    width: 100%; /* Full width for the button on smaller screens */
+  }
+}

@@ -1,50 +1,98 @@
 @import url('https://fonts.googleapis.com/css2?family=Ultra&display=swap');
 
-
-
-
-  .headline-home-content {
+.headline-home-content {
     background-image: url('https://bloximages.chicago2.vip.townnews.com/dailypost.vu/content/tncms/assets/v3/editorial/c/ed/ceda642e-c64c-5c24-bf0d-6bb5e83c8385/62bf58dd6d5c4.image.jpg?resize=750%2C422');
-    background-size: cover; /* Make the image cover the full area */
-    background-position: center; /* Center the image */
-    background-repeat: no-repeat; /* Ensure the image doesn’t repeat */
-    height: 100vh; /* Make the container take the full viewport height */
-    display: flex; /* For centering content inside */
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 100vh;
+    display: flex;
     justify-content: center;
     align-items: center;
     width: 100%;
+    padding: 20px;
 }
 
-.ultra-regular{
-  font-family: "Ultra", serif;
+.ultra-regular {
+    font-family: "Ultra", serif;
     font-weight: 100;
     font-style: normal;
     color: white;
-    font-size: 1.2rem; /* Adjust size as needed */
-  line-height: 1.5; /* Space between lines */
-  letter-spacing: 0.05em; /* Adjust space between letters */
-  /* text-transform: uppercase; If you want to make the text uppercase */
-  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.6); /* Adds shadow for emphasis */
-  padding: 10px 10px; /* Add space around the text */
-  margin: 10px 0; /* Adjust margin to control spacing */
-  /* text-align: center;  */
-
+    font-size: 1.2rem;
+    line-height: 1.5;
+    letter-spacing: 0.05em;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.6);
+    padding: 10px 10px;
+    margin: 10px 0;
 }
 
-.small-text{
-  font-style: normal;
+.small-text {
+    font-style: normal;
     color: white;
     font-family: "Ultra", serif;
-
 }
 
-
-  .box-1{
+.box-1 {
     width: 60%;
     background-color: #b7904d;
     padding: 10px 0;
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
-    margin-top: -10px; /* Pull the navbar closer to the first line */
+    margin-top: -10px;
     justify-content: center;
-    /* display: flex; */
+}
+
+/* Media Queries for Mobile Responsiveness */
+@media screen and (max-width: 768px) {
+    .headline-home-content {
+        background-position: top center;
+        padding: 10px;
+        height: 80vh; /* Slightly shorter on mobile */
+    }
+
+    .ultra-regular {
+        font-size: 1rem;
+        padding: 5px;
+    }
+
+    .ultra-regular h1 {
+        font-size: 1.8rem;
+        margin-bottom: 10px;
+    }
+
+    .box-1 {
+        width: 90%; /* Wider box on mobile */
+        margin: 5px auto;
+    }
+
+    .box-1 h1 {
+        font-size: 1.6rem;
+    }
+
+    .small-text {
+        font-size: 0.9rem;
+        padding: 0 15px;
+    }
+
+    .small-text br {
+        display: none; /* Remove line breaks on mobile for better text flow */
+    }
+}
+
+/* For very small devices */
+@media screen and (max-width: 480px) {
+    .headline-home-content {
+        height: 70vh;
+    }
+
+    .ultra-regular h1 {
+        font-size: 1.5rem;
+    }
+
+    .box-1 h1 {
+        font-size: 1.3rem;
+    }
+
+    .small-text {
+        font-size: 0.8rem;
+    }
 }

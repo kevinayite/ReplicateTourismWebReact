@@ -36,13 +36,6 @@
     padding-left: 45px; /* Changed from right to left for spacing between text and images */
   }
 
-  /* button{
-    border-radius: 12px;
-    padding: 12px;
-    background-color: #f09535;
-    cursor: pointer;
-    
-  } */
 
 
 .more {
@@ -92,25 +85,50 @@
 
 
 
-  /* Add this media query at the end of your CSS file */
+ 
+
 @media (max-width: 768px) {
   .about-container {
       flex-direction: column; /* Stack items vertically */
-      align-items: left; /* Center align */
+      align-items: center; /* Center align */
+      margin-left: 15px; /* Reduce side margins */
+      margin-right: 15px; /* Reduce side margins */
   }
 
   .about-left {
       padding-left: 0; /* Remove left padding */
       padding-top: 20px; /* Add some space above the text */
-      text-align: left; /* Center text for better appearance */
+      text-align: center; /* Center text for better appearance */
   }
 
   .about-right {
       gap: 10px; /* Adjust gap for smaller screens */
+      align-items: center; /* Center the images */
   }
 
-  .small-img {
-      width: 80%; /* Make small image larger on mobile */
-      align-self: center; /* Center small image */
+  .travel-images-section {
+      position: relative; /* Keep relative positioning */
+      width: 90%; /* Make the image section responsive */
+      margin: 0 auto; /* Center the image section */
+  }
+
+  .main-image {
+      width: 100%; /* Full width for main image */
+      height: auto; /* Maintain aspect ratio */
+  }
+
+  .overlay-image {
+      position: absolute;
+      bottom: -30px; /* Adjust vertical position */
+      right: 10%; /* Adjust to ensure it doesn't overflow */
+      width: 50%; /* Set a smaller width for the overlay image */
+      max-width: 150px; /* Set a max-width to prevent it from being too large */
+      height: auto; /* Maintain aspect ratio */
+  }
+
+  .more {
+      width: 60%; /* Make button larger on mobile */
+      margin-top: 15px; /* Add some space above the button */
   }
 }
+

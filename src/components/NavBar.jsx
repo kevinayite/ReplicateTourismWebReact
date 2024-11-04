@@ -71,7 +71,7 @@ const NavBar = () => {
             </button>
           </div>
           <ul className="sidebar-links">
-            <li className="sidebar-item current">
+            {/* <li className="sidebar-item current">
               <a href="#home">Home</a>
             </li>
             <li className="sidebar-item">
@@ -85,7 +85,24 @@ const NavBar = () => {
             </li>           
             <li className="sidebar-item">
               <a href="#contact">Contact us</a>
+            </li> */}
+
+<li className="sidebar-item current">
+          <Link to="/">Home</Link>
             </li>
+            <li className="sidebar-item">
+          <Link to="/about">About</Link>
+            </li>
+            <li className="sidebar-item">
+          <Link to="/destination">Destination</Link>
+            </li>
+            <li className="sidebar-item">
+          <Link to="/tour">Tour</Link>
+            </li>           
+            <li className="sidebar-item">
+          <Link to="/contact">Contact us</Link>
+</li>
+
           </ul>
           <div className="sidebar-footer">
             <div className="sidebar-social-icons">

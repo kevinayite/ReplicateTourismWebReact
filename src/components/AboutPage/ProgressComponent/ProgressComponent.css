@@ -57,3 +57,30 @@
     color: #666;
   }
   
+
+  @media (max-width: 600px) {
+    .progress-container {
+        flex-direction: column; /* Stack sections vertically */
+        align-items: left; /* Center align items */
+        margin-left: 20px; /* Adjust margins for smaller screens */
+        margin-right: 20px; /* Adjust margins for smaller screens */
+    }
+
+    .text-section {
+        padding-right: 0; /* Remove right padding */
+        text-align: left; /* Center text on mobile */
+    }
+
+    .text-section h1 {
+        font-size: 1.5em; /* Smaller heading size */
+    }
+
+    .progress-section {
+        padding-left: 0; /* Remove left padding */
+        width: 100%; /* Full width for progress section */
+    }
+
+    .progress-label {
+        font-size: 0.9em; /* Smaller label size */
+    }
+}

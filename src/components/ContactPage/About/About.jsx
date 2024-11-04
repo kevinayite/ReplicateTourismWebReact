@@ -3,9 +3,8 @@ import './About.css';
 const About = () => {
   return (
     <div className="about-container">
-      <div className="about-right"> {/* Moved the image section first */}
-        {/* <img src="https://www.sunderland.edu.hk/wp-content/uploads/2023/10/Blog-2-01.jpg" alt="Me" className="about-img large-img" />
-        <img src="https://www.sunderland.edu.hk/wp-content/uploads/2023/10/Blog-2-01.jpg" alt="Project Snapshot" className="about-img small-img" /> */}
+      <div className="about-right">
+        
         <div className="travel-images-section">
       <img
         src="https://www.sunderland.edu.hk/wp-content/uploads/2023/10/Blog-2-01.jpg"  // Replace with your main image URL

@@ -62,3 +62,24 @@
 .card:hover .overlay {
   opacity: 1;
 }
+
+
+@media (max-width: 900px) {
+  .grid {
+    grid-template-columns: repeat(2, 1fr); /* Two columns on medium screens */
+  }
+}
+
+@media (max-width: 600px) {
+  .grid {
+    grid-template-columns: 1fr; /* Single column on smaller screens */
+  }
+
+  .cardWide {
+    grid-column: span 1; /* Reset wide card to span one column */
+  }
+
+  .cardTall {
+    grid-row: span 1; /* Reset tall card to span one row */
+  }
+}
