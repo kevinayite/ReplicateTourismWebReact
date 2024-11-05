@@ -6,7 +6,7 @@ import { IoCallSharp } from "react-icons/io5";
 
 const ContactInfoAbout = () => {
   return (
-    <div className="container">
+    <div className="container-map">
       
       <div className="office-info">
         <div className="office-section">

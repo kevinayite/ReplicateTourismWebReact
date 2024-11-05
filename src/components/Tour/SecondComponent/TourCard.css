@@ -54,7 +54,7 @@
 .details {
     display: flex;
     justify-content: space-between;
-    font-size: 24px;
+    font-size: 18px;
 }
 
 .price {
@@ -75,3 +75,7 @@
 
 
 
+.details button{
+    background-color:#d6a853;
+    width: 45%;
+  }

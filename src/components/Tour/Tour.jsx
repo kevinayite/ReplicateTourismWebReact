@@ -12,6 +12,7 @@ const Tour = () => {
       <NavBar/>
       <FirstPageTour/>
       <SecondComponent/>
+      <br /><br /><br />
       <Footer/>
 
     </div>

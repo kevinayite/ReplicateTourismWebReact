@@ -51,7 +51,7 @@ const Footer = () => {
         Main Street, Victoria 8007.</p> <br />
 
         <p>Follow us <br/>
-        <div className="social-icons">
+        <div className="social-icons-footer">
           <FaFacebookF className="icon-style" />
           <FaInstagram className="icon-style" />
           <FaTwitter className="icon-style" />

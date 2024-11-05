@@ -10,16 +10,16 @@ const TourFilter = () => {
             <div className="tour-filter">
             <h3>Find Your Tour</h3>
             <div className="input-container">
-                <FaSearch className="input-icon" />
+                {/* <FaSearch className="input-icon" /> */}
                 <input type="text" placeholder="Search Tour" />
             </div>
             
             <div className="input-container">
-                <FaLocationDot className="input-icon" />
+                {/* <FaLocationDot className="input-icon" /> */}
                 <input type="text" placeholder="Where To?" />
             </div>
             <div className="input-container">
-                <MdCalendarMonth className="input-icon" />
+                {/* <MdCalendarMonth className="input-icon" /> */}
                 <select>
                     <option>Month</option>
                     <option>January</option>

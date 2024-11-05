@@ -1,25 +1,24 @@
+/* General styles */
 .travel-images-section {
     position: relative;
     display: inline-block;
     margin: 20px; /* Adjust as needed */
-  }
-  
-  .main-image {
+}
+
+.main-image {
     width: 500px; /* Adjust main image size */
     border: 3px solid #b7904d; /* Border color similar to reference */
     box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2); /* Optional shadow for depth */
-  }
-  
-  .overlay-image {
+}
+
+.overlay-image {
     position: absolute;
     bottom: -30px; /* Adjust vertical positioning */
     right: -55px; /* Adjust horizontal positioning */
     width: 200px; /* Adjust overlay image size */
     border: 3px solid #b7904d; /* Same border color as main image */
     box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2); /* Optional shadow for depth */
-  }
-  
-
+}
 
 .about-container {
     display: flex;
@@ -28,14 +27,13 @@
     padding: 20px;
     margin-left: 20px;
     margin-right: 20px;
+    flex-wrap: wrap; /* Allow items to wrap on smaller screens */
 }
 
 .about-left {
     flex: 1;
     padding-right: 45px; /* Adjusted from left to right for spacing between text and images */
 }
-
-
 
 .about-right {
     flex: 1;
@@ -51,37 +49,88 @@
     padding: 10px;
 }
 
-.large-img {
-    width: 90%;
-}
-
-.small-img {
-    width: 45%;
-    align-self: flex-start;
-}
-
 span, h2 {
     color: #b7904d;
 }
 
-@media (max-width: 768px) {
+/* Media Query for Small Screens (Mobile) */
+@media screen and (max-width: 768px) {
     .about-container {
-        flex-direction: column; /* Stack items vertically */
-        align-items: flex-start; /* Align to the left */
+        flex-direction: column; /* Stack content vertically on smaller screens */
+        padding: 10px;
+        margin-left: 0;
+        margin-right: 0;
+        justify-content: flex-start;
     }
 
     .about-left {
-        padding-right: 0; /* Remove right padding */
-        padding-top: 20px; /* Add some space above the text */
-        text-align: left; /* Align text to the left */
+        padding-right: 0; /* Remove right padding on small screens */
+        margin-bottom: 20px; /* Add margin below the text section */
+        justify-content: flex-start;
     }
 
     .about-right {
-        gap: 10px; /* Adjust gap for smaller screens */
+        flex: 1;
+        display: block; /* Ensure it is displayed as block, stacked below the text */
     }
 
-    .small-img {
-        width: 80%; /* Make small image larger on mobile */
-        align-self: center; /* Center small image */
+    .main-image {
+        width: 100%; /* Make the main image responsive */
+        max-width: 100%; /* Prevent overflow */
+        margin-bottom: 15px; /* Add space between images and text */
+    }
+
+    .overlay-image {
+        position: absolute;
+        bottom: -20px;
+        right: -20px;
+        width: 150px; /* Make the overlay image smaller */
+        max-width: 100%;
+    }
+
+    h1 {
+        font-size: 1.5rem; /* Reduce font size on smaller screens */
+    }
+
+    h2 {
+        font-size: 1rem; /* Reduce font size for smaller headings */
+    }
+
+    p {
+        font-size: 0.875rem; /* Adjust paragraph font size */
+    }
+
+    .travel-images-section {
+        width: 100%; /* Ensure the images section takes full width */
+        text-align: left; /* Center the images on small screens */
+        padding: 0;
+        
+    }
+}
+
+/* Media Query for Extra Small Screens (Very Mobile Devices) */
+@media screen and (max-width: 480px) {
+    .main-image {
+        width: 90%; /* Ensure the main image takes most of the screen width */
+    }
+    .about-left{
+        justify-content: left;
+    }
+
+    .overlay-image {
+        width: 120px; /* Adjust size for very small screens */
+        right: -10px; /* Adjust overlay image position */
+    }
+
+    h1 {
+        font-size: 1.3rem; /* Reduce font size further for extra small screens */
+    }
+
+    h2 {
+        font-size: 0.9rem; /* Adjust heading size */
+    }
+
+    p {
+        font-size: 0.75rem; /* Reduce paragraph size for better readability */
     }
 }

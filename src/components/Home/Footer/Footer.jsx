@@ -4,7 +4,7 @@ import visaLogo from './logos-picture/visa.jpg';
 import masterLogo from './logos-picture/mastercard.png';
 import paypalLogo from './logos-picture/paypal.jpg';
 import expressLogo from './logos-picture/american-express.png';
-import { Link } from 'react-router-dom'; // Import Link
+import { Link } from 'react-router-dom'; 
 
 const Footer = () => {
   return (
@@ -53,7 +53,7 @@ const Footer = () => {
         Main Street, Victoria 8007.</p> <br />
 
         <p>Follow us <br/>
-        <div className="social-icons">
+        <div className="social-icons-footer">
           <FaFacebookF className="icon-style" />
           <FaInstagram className="icon-style" />
           <FaTwitter className="icon-style" />

@@ -1,4 +1,4 @@
-.container {
+/* .container {
     display: flex;
     justify-content: space-between;
     padding: 20px;
@@ -17,5 +17,70 @@
     border: 0;
     width: 100%;
     height: 500px;
+  }
+   */
+
+   .container-map {
+    display: flex;
+    flex-direction: column; /* Stack items vertically */
+    justify-content: space-between;
+    padding: 20px;
+  }
+  
+  /* Office Info Section */
+  .office-info {
+    display: flex;
+    flex-direction: column; /* Stack office sections vertically */
+    gap: 20px;
+  }
+  
+  .office-section {
+    padding: 10px;
+    border: 1px solid #D4AF37;
+    border-radius: 5px;
+  }
+  
+  /* Icons color */
+  .icons-contact-info {
+    color: #D4AF37;
+  }
+  
+  /* Map Section */
+  .map {
+    width: 100%; /* Full width for better responsiveness */
+    margin-top: 20px; /* Add space between office info and map */
+  }
+  
+  .map iframe {
+    border: 0;
+    width: 100%;
+    height: 300px; /* Reduce height for smaller screens */
+  }
+  
+  /* Media Query for Larger Screens */
+  @media (min-width: 768px) {
+    .container-map {
+      flex-direction: row; /* Row layout for larger screens */
+    }
+  
+    .office-info {
+      flex-direction: row; /* Align office sections horizontally */
+      flex-wrap: wrap; /* Wrap sections to the next row if necessary */
+      gap: 30px; /* Increase gap between office sections */
+      max-width: 40%; /* Limit width of office info section */
+    }
+  
+    .office-section {
+      flex: 1 1 45%; /* Distribute space evenly */
+    }
+  
+    .map {
+      max-width: 55%; /* Adjust width of map section */
+      margin-top: 0; /* Remove top margin */
+    }
+  
+    .map iframe {
+      height: 500px; /* Increase height for larger screens */
+    }
   }
   
