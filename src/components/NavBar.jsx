@@ -71,21 +71,7 @@ const NavBar = () => {
             </button>
           </div>
           <ul className="sidebar-links">
-            {/* <li className="sidebar-item current">
-              <a href="#home">Home</a>
-            </li>
-            <li className="sidebar-item">
-              <a href="#about">About</a>
-            </li>
-            <li className="sidebar-item">
-              <a href="#destination">Destination</a>
-            </li>
-            <li className="sidebar-item">
-              <a href="#tour">Tour</a>
-            </li>           
-            <li className="sidebar-item">
-              <a href="#contact">Contact us</a>
-            </li> */}
+            
 
 <li className="sidebar-item current">
           <Link to="/">Home</Link>

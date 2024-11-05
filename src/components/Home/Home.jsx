@@ -106,6 +106,7 @@ location: 'London'
       {/* <TravelImagesSection/> */}
       <About/>
       <GalleryBeauty items={items}/>
+      <br /><br />
       <Test/>
       <div className="home">
             <h3>| Amazing Offers</h3>
