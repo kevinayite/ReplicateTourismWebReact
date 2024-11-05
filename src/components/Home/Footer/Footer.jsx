@@ -12,7 +12,7 @@ const Footer = () => {
       <footer className="footer">
       <div className="footer-column">
         <h3>Newsletter</h3>
-        <img src="path/to/logo.png" alt="logo-picture" className="logo" />
+        <img src="https://html.geekcodelab.com/holiday-planners/assets/images/logo.png" alt="logo-picture" className="logo" />
         Holiday Planners sit amet consectetur adipisicing elit. Perferendis sapiente tenetur officiis explicabo fugit, sit mollitia eum atque excepturi quaerat autem.
         <br /> <br />
         <form className="newsletter-form">

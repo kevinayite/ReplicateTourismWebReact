@@ -1,23 +1,22 @@
-
-/* 
- .container {
-  width: 100%;
-}  */
 .container-navbar {
-    max-width: 1200px; 
-    margin: 0 auto; /* Center the container */
+    max-width: auto; 
+    /* margin: 0 auto; Center the container */
   }
   
 
 /* First line styles */
 .first-line {
-  width: 100%;
+  /* width: 100%; */
+  /* max-width: auto; */
   display: flex;
   justify-content: space-between;
   background-color: black;
   color: white;
   padding: 1rem 2rem;
   /* margin: 0 auto; */
+}
+.contact-info{
+  max-width: auto;
 }
 
 .contact-info, .social-icons {
@@ -95,7 +94,7 @@
   font-size: 1.5rem;
   cursor: pointer;
   color: #333;
-  margin-left: 75%;
+  margin-left: 20%;
 }
 
 .sidebar {
@@ -167,6 +166,9 @@
   display: flex;
   justify-content: center;
   gap: 1.5rem;
+}
+.social-icons{
+  margin-left: 55%;
 }
 
 .overlay {

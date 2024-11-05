@@ -34,7 +34,7 @@ const NavBar = () => {
       </div>
 
       <nav className="navbar">
-        <img src="/api/placeholder/150/50" alt="logo" className="logo" />
+        <img src="https://html.geekcodelab.com/holiday-planners/assets/images/logo.png" alt="logo" className="logo" />
         
         <button 
           onClick={toggleSidebar}

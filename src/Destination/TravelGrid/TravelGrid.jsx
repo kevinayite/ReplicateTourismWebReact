@@ -52,7 +52,7 @@ const TravelGrid = () => {
   ];
 
   return (
-    <div className="container">
+    <div className="container-destination">
       <div className="grid">
         {destinations.map((dest) => (
           <DestinationCard

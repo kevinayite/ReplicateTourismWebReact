@@ -1,11 +1,11 @@
 import './Content.css'
 const Content = () => {
   return ( 
-    <div className="container">
+    <div className="container-home-content">
         <div className='headline-home-content'>
           <center>
         <div className='ultra-regular'>
-        
+        <br /><br />
           
         <h1>
           Get ready to Travel
