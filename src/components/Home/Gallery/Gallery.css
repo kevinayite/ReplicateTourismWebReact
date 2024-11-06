@@ -2,7 +2,7 @@
 .gallery {
     display: flex;
     flex-wrap: nowrap;
-    overflow-x: hidden;  /* Hide horizontal scrollbar */
+    overflow-x: hidden;  
     gap: 20px;
 }
 

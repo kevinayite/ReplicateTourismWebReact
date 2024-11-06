@@ -28,6 +28,7 @@
     margin-left: 20px;
     margin-right: 20px;
     flex-wrap: wrap; /* Allow items to wrap on smaller screens */
+    margin: 0 !important;
 }
 
 .about-left {
@@ -56,11 +57,11 @@ span, h2 {
 /* Media Query for Small Screens (Mobile) */
 @media screen and (max-width: 768px) {
     .about-container {
-        flex-direction: column; /* Stack content vertically on smaller screens */
+        flex-direction: column; 
         padding: 10px;
         margin-left: 0;
         margin-right: 0;
-        justify-content: flex-start;
+        justify-content: center;
     }
 
     .about-left {
@@ -72,10 +73,11 @@ span, h2 {
     .about-right {
         flex: 1;
         display: block; /* Ensure it is displayed as block, stacked below the text */
+        
     }
 
     .main-image {
-        width: 100%; /* Make the main image responsive */
+        width: 90%; /* Make the main image responsive */
         max-width: 100%; /* Prevent overflow */
         margin-bottom: 15px; /* Add space between images and text */
     }
@@ -84,8 +86,8 @@ span, h2 {
         position: absolute;
         bottom: -20px;
         right: -20px;
-        width: 150px; /* Make the overlay image smaller */
-        max-width: 100%;
+        width: 140px; /* Make the overlay image smaller */
+        max-width: 90%;
     }
 
     h1 {

@@ -5,6 +5,8 @@
     color: #fff;
     padding: 20px;
     position: relative; /* Added for the line */
+    margin: 0 !important;
+    margin-top: 20px;
     
 }
 
