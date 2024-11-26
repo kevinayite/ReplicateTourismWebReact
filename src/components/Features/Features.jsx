@@ -1,4 +1,4 @@
-//import React from "react";
+
 import "./Features.css"; 
 import { FaBus } from "react-icons/fa";
 import { TiWorld } from "react-icons/ti";

@@ -1,6 +1,6 @@
 
 import React from 'react';
-import '../TravelGrid/TravelGrid.css';
+import './TravelGridInverse.css'
 
 
 const DestinationCard = ({ country, image, description, isWide, isTall }) => {
