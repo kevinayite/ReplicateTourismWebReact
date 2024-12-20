@@ -1,21 +1,29 @@
 @import url('https://fonts.googleapis.com/css2?family=Ultra&display=swap');
-
+.container-contact {
+  width: 100%;
+  height: 100vh; /* Full height of the viewport */
+  background-image: url('https://media.istockphoto.com/id/1346944001/photo/close-up-of-co-workers-stacking-their-hands-together.jpg?s=612x612&w=0&k=20&c=lidJcFUSR3rkMt4B0yoNwH55lz3sth9o2280keqBXGE='); /* Path to the background image */
+  background-size: cover; /* Ensures the image covers the entire container */
+  background-position: center; /* Centers the background image */
+  background-repeat: no-repeat; /* Prevents the image from repeating */
+  display: flex; /* Flexbox to center content */
+  justify-content: center; /* Centers the content horizontally */
+  align-items: center; /* Centers the content vertically */
+  color: white; /* Makes text white for contrast */
+  text-align: center; /* Ensures the text inside is centered */
+}
 .headline-contact {
-  background-image: url('https://media.istockphoto.com/id/1346944001/photo/close-up-of-co-workers-stacking-their-hands-together.jpg?s=612x612&w=0&k=20&c=lidJcFUSR3rkMt4B0yoNwH55lz3sth9o2280keqBXGE=');
-  background-size: cover;
-  background-position: center;
-  background-repeat: no-repeat;
-  height: 100vh;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  margin: -60px !important;
+  padding: 20px;
+  border-radius: 10px;
+}
+.ultra-contact {
+  font-size: 3rem;
+  font-weight: bold;
+  font-family: 'Ultra', sans-serif; 
+  font-size: 4rem; 
+  color: white; 
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7); 
   
 }
 
-.ultra-contact {
-  font-family: 'Ultra', sans-serif; /* Ensure the font is applied */
-  font-size: 4rem; /* Adjust font size to be larger */
-  color: white; /* Change text color for contrast */
-  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7); /* Optional: Add shadow for better visibility */
-}
+

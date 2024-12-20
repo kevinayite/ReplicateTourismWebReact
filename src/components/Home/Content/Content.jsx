@@ -6,7 +6,7 @@ const Content = () => {
           <center>
         <div className='ultra-regular'>
         <br /><br />
-          
+
         <h1>
           Get ready to Travel
         </h1>
@@ -23,13 +23,11 @@ const Content = () => {
 
         </div>
 
-        
-        
         </center>
         </div>        
 
     </div>
-    
+
   )
 }
 

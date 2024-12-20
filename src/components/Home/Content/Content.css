@@ -1,24 +1,36 @@
-@import url('https://fonts.googleapis.com/css2?family=Ultra&display=swap');
-
-.headline-home-content {
-    background-image: url('https://bloximages.chicago2.vip.townnews.com/dailypost.vu/content/tncms/assets/v3/editorial/c/ed/ceda642e-c64c-5c24-bf0d-6bb5e83c8385/62bf58dd6d5c4.image.jpg?resize=750%2C422');
-    background-size: cover;
-    /* background-position: center; */
-    background-repeat: no-repeat;
-    height: 115vh;
-    display: flex;
-    justify-content: center;
-    /* align-items: center; */
-    /* width: 100% !important; */
-    /* padding: 20px; */
-    margin: 0 !important;
-}
-.container-home-content{
-    
-    margin: -60px !important;
-}
-
-.ultra-regular {
+.container-home-content {
+    width: 100%;
+    height: 100vh; /* Full height of the viewport */
+    background-image: url('https://bloximages.chicago2.vip.townnews.com/dailypost.vu/content/tncms/assets/v3/editorial/c/ed/ceda642e-c64c-5c24-bf0d-6bb5e83c8385/62bf58dd6d5c4.image.jpg?resize=750%2C422'); /* Path to the image */
+    background-size: cover; /* Ensures the image covers the entire container */
+    background-position: center; /* Centers the background image */
+    background-repeat: no-repeat; /* Prevents the image from repeating */
+    display: flex; /* Flexbox to center content */
+    justify-content: center; /* Centers the content horizontally */
+    align-items: center; /* Centers the content vertically */
+    color: white; /* Makes text white to contrast against the background */
+  }
+  
+  .headline-home-content {
+    text-align: center; /* Centers text */
+    padding: 20px;
+    /* background: rgba(0, 0, 0, 0.5); Optional: Darkens the background for better text visibility */
+    border-radius: 10px;
+  }
+  
+  .ultra-regular h1 {
+    font-size: 3rem; /* Adjusts size of main heading */
+  }
+  
+  .box-1 h1 {
+    font-size: 2rem; /* Adjusts size of the subheading */
+  }
+  
+  .small-text {
+    font-size: 1rem;
+    line-height: 1.5;
+  }
+  .ultra-regular {
     font-family: "Ultra", serif;
     font-weight: 100;
     font-style: normal;
@@ -45,59 +57,6 @@
     margin-top: -10px;
     justify-content: center;
 }
+  
 
-/* Media Queries for Mobile Responsiveness */
-@media screen and (max-width: 768px) {
-    .headline-home-content {
-        background-position: top center;
-        padding: 10px;
-        height: 80vh; /* Slightly shorter on mobile */
-    }
-
-    .ultra-regular {
-        font-size: 1rem;
-        padding: 5px;
-    }
-
-    .ultra-regular h1 {
-        font-size: 1.8rem;
-        margin-bottom: 10px;
-    }
-
-    .box-1 {
-        width: 90%; /* Wider box on mobile */
-        margin: 5px auto;
-    }
-
-    .box-1 h1 {
-        font-size: 1.6rem;
-    }
-
-    .small-text {
-        font-size: 0.9rem;
-        padding: 0 15px;
-    }
-
-    .small-text br {
-        display: none; /* Remove line breaks on mobile for better text flow */
-    }
-}
-
-/* For very small devices */
-@media screen and (max-width: 480px) {
-    .headline-home-content {
-        height: 70vh;
-    }
-
-    .ultra-regular h1 {
-        font-size: 1.5rem;
-    }
-
-    .box-1 h1 {
-        font-size: 1.3rem;
-    }
-
-    .small-text {
-        font-size: 0.8rem;
-    }
-}
+  
